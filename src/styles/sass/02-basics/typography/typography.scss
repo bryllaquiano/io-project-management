@@ -1,0 +1,13 @@
+// Typography
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.project-title-container {
+    text-align: center;
+    h1 {
+        font-size: 28px;
+        font-weight: 700;
+        color: $text-light-color;
+    }
+}
