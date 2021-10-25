@@ -1,0 +1,21 @@
+.project-info-container {
+    .edit-members-container {
+        button {
+            border: none;
+
+            span {
+                position: relative;
+    
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: auto;
+                    border-bottom: 1px solid $text-light-color;
+                }
+            }
+        }
+    }
+}

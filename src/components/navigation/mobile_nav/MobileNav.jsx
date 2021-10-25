@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeInactive, ActiveBoardInactive, MyBoardsInactive, AddBoardInactive, MoreInactive } from '../../utility/ExportMobileNavigationIcons';
+import { Link } from 'react-router-dom';
 
 const MobileNav = () => {
     return (

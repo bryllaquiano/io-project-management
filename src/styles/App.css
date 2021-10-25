@@ -55,26 +55,56 @@ table {
 body {
   background-color: #27292B;
 }
+body .app-container .project-title-container h1,
+body .app-container .deadline-container p,
+body .app-container .kanban-container h2 {
+  color: #EDF2F2;
+}
+body .app-container .edit-members-container button {
+  background-color: transparent;
+  color: #dcae7d;
+}
+body .app-container .kanban-container .board .list-container {
+  background-color: #686868;
+}
 
-body {
+body,
+* {
   font-family: "Nunito", sans-serif;
 }
 
-.project-title-container {
+.project-info-container {
   text-align: center;
+  line-height: 2.5rem;
 }
-.project-title-container h1 {
+.project-info-container .project-title-container h1 {
   font-size: 28px;
   font-weight: 700;
-  color: #EDF2F2;
+}
+.project-info-container .deadline-container p {
+  font-size: 12px;
 }
 
 .app-container {
-  margin: 30px;
+  margin: 40px 30px;
+}
+.app-container .logo-container {
+  margin: 40px;
+}
+.app-container .project-info-container {
+  margin-bottom: 3rem;
+}
+.app-container .project-info-container .project-title-container {
+  padding-bottom: 10px;
 }
 
-.project-title-container {
-  margin-top: 50px;
+.kanban-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .logo-container {
@@ -83,6 +113,22 @@ body {
 .logo-container img {
   width: 28px;
   height: auto;
+}
+
+.project-info-container .edit-members-container button {
+  border: none;
+}
+.project-info-container .edit-members-container button span {
+  position: relative;
+}
+.project-info-container .edit-members-container button span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #EDF2F2;
 }
 
 /*# sourceMappingURL=App.css.map */

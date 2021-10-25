@@ -11,5 +11,8 @@
 @import './03-layout/margin/margin.scss';
 
 
-// Components
+// Components and Modules
+@import './04-components/cards/card.scss';
+@import './04-components/kanban/kanban.scss';
 @import './04-components/logo/logo.scss';
+@import './04-components/modules/linksAndButtons.scss';

@@ -1,12 +1,12 @@
 import logo from '../../images/logo192.png';
+import { Link } from 'react-router-dom';
 
 const Logo = () => {
     return (
         <>
-            <div className='logo-container'>
-                <img src={logo} alt='Logo' id='logo-img'/>
-            </div>
-            {/* .logo-container */}
+            <Link to='/'>
+                <img src={logo} alt='Logo' id='logo-img' className='logo-img' />
+            </Link>
 
         </>
     )

@@ -1,8 +1,15 @@
 // Margin
 .app-container {
-    margin: 30px;
-}
+    margin: 40px 30px;
 
-.project-title-container {
-    margin-top: 50px;
+    .logo-container {
+        margin: 40px;
+    }
+
+    .project-info-container {
+        margin-bottom: 3rem;
+        .project-title-container {
+            padding-bottom: 10px;
+        }
+    }
 }
