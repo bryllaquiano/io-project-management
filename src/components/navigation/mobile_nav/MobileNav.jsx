@@ -1,4 +1,5 @@
 import React from 'react';
+import { MobileNavLinks } from './MobileNavLinks';
 import { Link } from 'react-router-dom';
 
 const MobileNav = () => {
@@ -6,10 +7,17 @@ const MobileNav = () => {
         <>
             <nav className='mobile-nav'>
                 <ul>
-                    <li>Home</li>
-                    <li>Active Board</li>
-                    <li>My Boards</li>
-                    <li>Add New Board</li>
+                    {MobileNavLinks.map(( item, index ) => {
+                        return (
+                            <li key={index} className={item.cName}>
+                                <Link to={item.path}>
+                                    {item.activeIcon}
+                                    {item.inactiveIcon}
+                                    <span>{item.title}</span>
+                                </Link>
+                            </li>
+                        )
+                    })}
                 </ul>
             </nav>
         </>

@@ -12,4 +12,25 @@
             padding-bottom: 10px;
         }
     }
+
+    .kanban-container {
+        .board {
+            h2 {
+                margin-bottom: $padding;
+            }
+            .list-container {
+                padding: $padding;
+            }
+        }
+    }
+
+    .mobile-nav-container {
+        padding: $padding;
+
+        li {
+            span {
+                margin-top: 5px;
+            }
+        }
+    }
 }

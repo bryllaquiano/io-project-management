@@ -28,7 +28,7 @@ const App = () => {
                 {/* .project-title-container */}
 
                 <div className='deadline-container'>
-                    <p>Due date: <span id='deadline-date' contentEditable='true'>01/01/2022</span></p>
+                    <p>Due date: <span id='deadline-date'>01/01/2022</span></p>
                 </div>
                 {/* .deadline-container */}
 
@@ -41,13 +41,14 @@ const App = () => {
 
             <div className='kanban-container'>
                 <ToDo />
-                <InProgress />
-                <Done />
+
             </div>
             {/* .kanban */}
 
             <div className='mobile-nav-container'>
-                <MobileNav />
+                <Router>
+                    <MobileNav />
+                </Router>
             </div>
 
         </div>

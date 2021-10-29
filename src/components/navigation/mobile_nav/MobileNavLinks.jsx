@@ -1,36 +1,41 @@
 import React from 'react';
-import { HomeActive, ActiveBoardActive, MyBoardsActive, AddBoardActive, MoreActive} from '../../utility/ExportMobileNavIcons';
-import { HomeInactive, ActiveBoardInactive, MyBoardsInactive, AddBoardInactive, MoreInactive } from '../../utility/ExportMobileNavIcons';
+import { HomeActive, CurrentBoardActive, MyBoardsActive, AddBoardActive, MoreActive} from '../../utility/ExportMobileNavIcons';
+import { HomeInactive, CurrentBoardInactive, MyBoardsInactive, AddBoardInactive, MoreInactive } from '../../utility/ExportMobileNavIcons';
 
 export const MobileNavLinks = [
     {
         title: "Home",
         path: '/',
-        activeIcon: <HomeActive/>,
-        inactiveIcon: <HomeInactive/>
+        activeIcon: <HomeActive className='home-active-icon active-icon'/>,
+        inactiveIcon: <HomeInactive  className='home-inactive-icon inactive-icon'/>,
+        cName: 'home-link'
     },
     {
-        title: "Active Board",
-        path: '/active-board',
-        activeIcon: <ActiveBoardActive/>,
-        inactiveIcon: <ActiveBoardInactive/>
+        title: "Current Board",
+        path: '/current-board',
+        activeIcon: <CurrentBoardActive className='current-board-active-icon active-icon' />,
+        inactiveIcon: <CurrentBoardInactive className='current-board-inactive-icon inactive-icon'/>,
+        cName: 'active-board-link'
     },
     {
         title: "My Boards",
         path: '/my-boards',
-        activeIcon: <MyBoardsActive/>,
-        inactiveIcon: <MyBoardsInactive/>
+        activeIcon: <MyBoardsActive className='my-boards-active-icon active-icon'/>,
+        inactiveIcon: <MyBoardsInactive className='my-boards-inactive-icon inactive-icon'/>,
+        cName: 'my-boards-link'
     },
     {
         title: "Add Board",
         path: '/add-board',
-        activeIcon: <AddBoardActive/>,
-        inactiveIcon: <AddBoardInactive/>
+        activeIcon: <AddBoardActive className='add-board-active-icon active-icon'/>,
+        inactiveIcon: <AddBoardInactive className='add-board-inactive-icon inactive-icon'/>,
+        cName: 'add-board-link'
     },
     {
-        title: "More",
+        title: "More Options",
         path: '/more',
-        activeIcon: <MoreActive/>,
-        inactiveIcon: <MoreInactive/>
+        activeIcon: <MoreActive className='more-options-active-icon active-icon'/>,
+        inactiveIcon: <MoreInactive className='more-options-inactive-icon inactive-icon'/>,
+        cName: 'more-options-link'
     }
 ]

@@ -2,22 +2,44 @@
 body,
 * {
     font-family: "Nunito", sans-serif;
+    line-height: $padding;
 }
 
+// Project Info
 .project-info-container {
     text-align: center;
     line-height: 2.5rem;
 
     .project-title-container {
-       
         h1 {
-            font-size: 28px;
+            font-size: 36px;
             font-weight: 700;
         }
     }
 
     .deadline-container {
         p {
+            font-size: 12px;
+        }
+    }
+}
+
+// Kanban
+.kanban-container {
+    .board {
+        h2 {
+            font-size: 24px;
+        }
+    }
+}
+
+// Mobile Navigation
+.mobile-nav {
+    li {
+        svg {
+            font-size: 26px;
+        }
+        span {
             font-size: 12px;
         }
     }

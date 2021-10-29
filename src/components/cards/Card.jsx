@@ -3,7 +3,6 @@ import { DragCard, TaskSettings } from '../utility/ExportActions';
 
 const Card = () => {
     return (
-        <div>
             <div className='card todo-card'>
                 <div className='drag'>
                     <DragCard />
@@ -20,8 +19,7 @@ const Card = () => {
                 </div>
                 {/* .todo-settings .task-settings */}
             </div>
-            {/* .card .todo-card */}
-        </div>
+            /* .card .todo-card */
     )
 }
 

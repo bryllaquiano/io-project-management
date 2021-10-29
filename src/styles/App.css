@@ -21,6 +21,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -67,10 +68,14 @@ body .app-container .edit-members-container button {
 body .app-container .kanban-container .board .list-container {
   background-color: #686868;
 }
+body .app-container .mobile-nav-container {
+  background-color: #EDF2F2;
+}
 
 body,
 * {
   font-family: "Nunito", sans-serif;
+  line-height: 1rem;
 }
 
 .project-info-container {
@@ -78,10 +83,21 @@ body,
   line-height: 2.5rem;
 }
 .project-info-container .project-title-container h1 {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
 }
 .project-info-container .deadline-container p {
+  font-size: 12px;
+}
+
+.kanban-container .board h2 {
+  font-size: 24px;
+}
+
+.mobile-nav li svg {
+  font-size: 26px;
+}
+.mobile-nav li span {
   font-size: 12px;
 }
 
@@ -97,14 +113,17 @@ body,
 .app-container .project-info-container .project-title-container {
   padding-bottom: 10px;
 }
-
-.kanban-container {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto;
-  height: 100%;
-  width: 100%;
-  white-space: nowrap;
+.app-container .kanban-container .board h2 {
+  margin-bottom: 1rem;
+}
+.app-container .kanban-container .board .list-container {
+  padding: 1rem;
+}
+.app-container .mobile-nav-container {
+  padding: 1rem;
+}
+.app-container .mobile-nav-container li span {
+  margin-top: 5px;
 }
 
 .logo-container {
@@ -129,6 +148,36 @@ body,
   width: 100%;
   height: auto;
   border-bottom: 1px solid #EDF2F2;
+}
+
+.mobile-nav-container a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.mobile-nav-container a:link {
+  color: #27292B;
+  text-decoration: none;
+}
+
+.mobile-nav-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.mobile-nav-container ul {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mobile-nav-container ul li {
+  flex: 1;
+}
+.mobile-nav-container ul li .active-icon {
+  display: none;
 }
 
 /*# sourceMappingURL=App.css.map */
